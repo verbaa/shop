@@ -5,14 +5,24 @@ import store from "./services/store";
 import history from "./services/history";
 import { AppContainer } from "./AppContainer";
 import "./shared/styles/main.scss";
+import { ThemeProvider } from "@material-ui/core/styles"
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+
+
+import {theme} from "./theme";
 
 function App() {
   return (
-    <Provider store={store}>
-      <AppContainer
-        history={history}
-      />
-    </Provider>
+     <ThemeProvider theme={theme    }>
+          <Provider store={store}>
+              <CssBaseline/>
+              <AppContainer
+                  history={history}
+              />
+          </Provider>
+     </ThemeProvider>
+
   );
 }
 

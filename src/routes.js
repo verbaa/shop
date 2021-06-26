@@ -1,6 +1,6 @@
-import { routes as feature } from "./features/feature/routes";
+import { routes as catalog } from "./features/catalog/routes";
 
 export const routes = [
   // put here features' routes
-  ...feature,
+  ...catalog,
 ];

@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 
 import { Example } from "../components/Example";
 
-export function FeaturePage() {
+export function HomePage() {
   return (
     <div className="page">
-      Feature's home page
-      <Example />
+    Home page
     </div>
   );
 }
 
-FeaturePage.propTypes = {};
+HomePage.propTypes = {};
