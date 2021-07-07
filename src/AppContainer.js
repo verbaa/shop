@@ -23,7 +23,7 @@ export function AppContainer(props) {
                     {routes.map(route => (
                         <Route key={route.key} path={route.path} exact={route.exact} component={route.component}/>
                     ))}
-                    <Route path="*" exact render={() => <Page404/>}/>
+                    <Route path="*" exact  component={Page404}/>
                 </Switch>
             </Container>
         </ConnectedRouter>
