@@ -24,7 +24,7 @@ export const { set } = slice.actions;
 export function allItems(value) {
     return set({
       selectItems: value
-    });
+    })
 }
 
 

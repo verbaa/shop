@@ -70,7 +70,8 @@ export function ProductsPage() {
 
 
     const handleCart = (e) => {
-        dispatch(allItems(e))
+        dispatch(allItems())
+
     };
 
 
@@ -134,7 +135,7 @@ export function ProductsPage() {
                                     </Typography>
                                 </CardContent>
 
-                                <Box onClick={() => handleCart(products)}>Add cart</Box>
+                                <Button variant="contained" color="primary" onClick={() => handleCart(products)}>Add cart</Button>
 
                                 {products.isNew ? <Badge color="secondary">
                                     <NewReleasesOutlinedIcon/>
